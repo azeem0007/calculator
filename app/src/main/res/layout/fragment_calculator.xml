@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background_image">
+
+    <!-- Heading Text -->
+    <TextView
+        android:id="@+id/textViewHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculator"
+        android:textSize="43sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:layout_alignParentTop="true"/>
+
+    <!-- First Number Input -->
+    <EditText
+        android:id="@+id/editTextNumber1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter first number"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:textSize="23sp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/textViewHeading"
+        android:layout_marginTop="16dp" />
+
+    <!-- Second Number Input -->
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter second number"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:textSize="23sp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/editTextNumber1"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Add Button -->
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add + "
+        android:background="@drawable/button_background"
+        android:textColor="#FFFFFF"
+        android:textSize="23sp"
+        android:layout_below="@+id/editTextNumber2"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Subtract Button -->
+    <Button
+        android:id="@+id/buttonSubtract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subtract - "
+        android:background="@drawable/button_background"
+        android:textColor="#FFFFFF"
+        android:textSize="23sp"
+        android:layout_below="@+id/buttonAdd"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Multiply Button -->
+    <Button
+        android:id="@+id/buttonMultiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Multiply * "
+        android:background="@drawable/button_background"
+        android:textColor="#FFFFFF"
+        android:textSize="23sp"
+        android:layout_below="@+id/buttonSubtract"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Divide Button -->
+    <Button
+        android:id="@+id/buttonDivide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Divide / "
+        android:background="@drawable/button_background"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/buttonMultiply"
+        android:layout_marginTop="16dp"
+        android:textSize="23sp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Result Text -->
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonDivide"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true"
+        android:text="Result: "
+        android:textSize="34sp"
+        android:textColor="@color/black"/>
+</RelativeLayout>
